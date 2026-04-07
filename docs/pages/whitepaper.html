@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>정책 백서 | 화성화옹지구 서부발전협의회</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .doc-page { max-width: 900px; margin: 0 auto; padding: 120px 24px 80px; }
+    .doc-page-header { text-align: center; margin-bottom: 60px; padding-bottom: 40px; border-bottom: 2px solid var(--gold-pale); }
+    .doc-page-header .badge { display: inline-block; background: var(--navy); color: var(--gold-light); font-size: 13px; font-weight: 700; padding: 6px 18px; border-radius: 100px; margin-bottom: 20px; border: 1px solid rgba(200,150,42,0.4); }
+    .doc-page-header h1 { font-size: 1.7rem; color: var(--navy); margin-bottom: 12px; line-height: 1.4; }
+    .doc-page-header .meta { font-size: 14px; color: var(--text-light); }
+    .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-weight: 600; font-size: 14px; margin-bottom: 40px; }
+    .cover-img { margin: 32px auto; max-width: 500px; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); overflow: hidden; }
+    .abstract-box { background: var(--off-white); border-radius: var(--radius-lg); padding: 36px; border-left: 4px solid var(--gold); margin: 40px 0; }
+    .abstract-box h2 { font-size: 1rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; }
+    .abstract-box p { font-size: 0.92rem; color: var(--text); line-height: 1.85; margin-bottom: 12px; }
+    .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--gray-light); }
+    .keyword { background: var(--navy); color: var(--gold-light); font-size: 12px; padding: 4px 14px; border-radius: 100px; font-weight: 600; }
+    .toc { background: var(--white); border: 1px solid var(--gray-light); border-radius: var(--radius-lg); padding: 32px; margin: 40px 0; }
+    .toc h2 { font-size: 1.1rem; color: var(--navy); margin-bottom: 20px; }
+    .toc ol { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .toc li { font-size: 14px; color: var(--text-light); }
+    .toc li strong { color: var(--navy); }
+    .wp-section { margin: 48px 0; }
+    .wp-section h2 { font-size: 1.4rem; color: var(--navy); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gold-pale); }
+    .wp-section h3 { font-size: 1.05rem; color: var(--navy); margin: 24px 0 12px; }
+    .wp-section p { font-size: 0.92rem; color: var(--text); line-height: 1.85; margin-bottom: 16px; }
+    .wp-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 13px; }
+    .wp-table th { background: var(--navy); color: var(--white); padding: 12px 14px; text-align: left; font-weight: 700; }
+    .wp-table td { padding: 11px 14px; border-bottom: 1px solid var(--gray-light); vertical-align: top; }
+    .wp-table tr:nth-child(even) td { background: var(--off-white); }
+    .wp-table .highlight-cell { color: var(--green); font-weight: 700; }
+    .wp-table .bad-cell { color: var(--red); }
+    .wp-section ul, .wp-section ol { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; margin: 16px 0; }
+    .wp-section li { font-size: 0.92rem; color: var(--text); line-height: 1.7; }
+    .noise-img-box { margin: 32px 0; }
+    .noise-img-box img { border-radius: var(--radius); box-shadow: var(--shadow); }
+    .noise-img-box figcaption { font-size: 12px; color: var(--text-light); text-align: center; margin-top: 10px; font-style: italic; }
+    .conclusion-box { background: var(--navy); color: var(--white); border-radius: var(--radius-lg); padding: 40px; margin: 48px 0; }
+    .conclusion-box h2 { color: var(--gold-light); font-size: 1.3rem; margin-bottom: 20px; }
+    .conclusion-box p { color: rgba(255,255,255,0.8); font-size: 0.92rem; line-height: 1.85; margin-bottom: 12px; }
+    .conclusion-box strong { color: var(--gold-light); }
+    .region-img-box { margin: 32px auto; max-width: 700px; }
+    .region-img-box img { border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%; }
+    .region-img-box figcaption { text-align: center; font-size: 12px; color: var(--text-light); margin-top: 10px; font-style: italic; }
+  </style>
+</head>
+<body>
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/img/hwaong_west_stamp.png" alt="HHWSDC" class="logo-stamp" />
+      <div class="logo-text">
+        <span class="logo-ko">화성화옹지구 서부발전협의회</span>
+        <span class="logo-en">HHWSDC</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#why">당위성</a></li>
+      <li><a href="../index.html#impact">경제 효과</a></li>
+      <li><a href="../index.html#policy">정책 제안</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">청원 참여</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="doc-page">
+  <a href="../index.html" class="back-link">← 홈으로 돌아가기</a>
+
+  <div class="doc-page-header">
+    <div class="badge">정책 백서 · Version 1.0.20260321</div>
+    <h1>경기국제공항 화옹지구 입지 확정 및 조속한 추진을 통한<br />수도권 남부·서해안권 항공 접근성 개선과 국가경쟁력 강화를 위한 청원서</h1>
+    <p class="meta">화성화옹지구 서부발전협의회 (HHWSDC) · 2026년 3월 21일</p>
+  </div>
+
+  <div class="cover-img">
+    <img src="../assets/img/cover01.jpg" alt="화옹지구 경기국제공항 백서 표지" />
+  </div>
+
+  <div class="abstract-box">
+    <h2>Abstract / 초록</h2>
+    <p>우리는 경기남부 국제공항(가칭 경기국제공항)의 최적 입지로서 화성 화옹지구를 선정해야 하는 정책적·경제적·전략적 타당성을 종합적으로 제시한다. 수도권 남부와 서해안권은 반도체·자동차·바이오 등 국가 핵심 산업이 밀집한 대한민국 제조·수출 경제의 중심축임에도 불구하고, 항공 인프라 부족으로 글로벌 공급망 대응력과 국제 물류 경쟁력이 구조적으로 제약되고 있다.</p>
+    <p>화옹지구는 광범위한 국유 간척지를 기반으로 대규모 부지 확보가 용이하며, 서해안고속도로·수도권 제2순환고속도로·평택항·서해안 산업벨트와의 연계성이 뛰어나 항공·해상·도로가 통합된 복합물류 체계 구축에 최적화된 입지를 갖춘다. 특히 수원–용인–화성–평택을 연결하는 세계 최대 규모의 반도체 메가클러스터는 고부가가치 항공화물과 글로벌 비즈니스 이동 수요가 급증하고 있어, 경기국제공항은 해당 산업벨트의 공급망 안정성을 강화하는 국가 전략 물류 거점이 될 수 있다.</p>
+    <p>우리는 지리·산업·정책·경제성·환경 관점에서 화옹지구 국제공항 건설의 종합적 타당성을 분석하고, 제7차 공항개발 종합계획 반영, 사전·예비타당성 조사 조기 착수, 관계기관 공동 공론화위원회 구성 등 단계별 실행 로드맵을 제안한다. 경기국제공항은 지역개발을 넘어 대한민국 항공정책의 구조적 전환과 글로벌 물류 경쟁력 강화, 수도권 균형발전 실현을 위한 <strong>국가 핵심 전략 프로젝트</strong>임을 본 연구는 명확히 규명한다.</p>
+    <div class="keywords">
+      <span class="keyword">경기국제공항 개발</span>
+      <span class="keyword">화옹지구 입지 분석</span>
+      <span class="keyword">항공 접근성 개선</span>
+      <span class="keyword">국가경쟁력 강화</span>
+      <span class="keyword">국가 물류전략</span>
+      <span class="keyword">수도권 균형발전</span>
+      <span class="keyword">항공 인프라·산업 시너지</span>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h2>📋 목차</h2>
+    <ol>
+      <li><strong>소개</strong> — 경기국제공항 추진 배경 및 전략적 의미</li>
+      <li><strong>사업 추진의 당위성</strong> — 5가지 핵심 동기 분석</li>
+      <li><strong>배경 및 현황</strong> — 단일 공항 구조의 한계와 정책 기반</li>
+      <li><strong>현황 진단</strong> — 지리적 우위 및 산업 시너지 효과</li>
+      <li><strong>화성지구의 경제 낙후 현황</strong> — 동·서부 격차 실태 분석</li>
+      <li><strong>화옹지구 국제공항 건설 필요성</strong> — 6가지 전략적 이유</li>
+      <li><strong>화옹지구 국제공항 도입 효과</strong> — 경제·주민·사회적 편익</li>
+      <li><strong>소음 영향 및 해결 전략</strong> — 군공항 vs 민항기 차이 분석</li>
+      <li><strong>종합 논의 및 쟁점 분석</strong> — 기능 정체성·입지 타당성</li>
+      <li><strong>결론</strong> — 정책 제언 및 실행 로드맵</li>
+    </ol>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="wp-section">
+    <h2>1. 소개</h2>
+    <p>경기남부 국제공항(가칭 "경기국제공항") 건설 논의는 단순한 지역 개발 이슈를 넘어, 대한민국 항공 인프라의 구조적 취약성을 보완하고 수도권 남부·서해안권의 항공 접근성 불균형을 해소해야 한다는 국가적 과제에서 출발한다.</p>
+    <p>대한민국의 국제 항공망은 인천국제공항에 사실상 단일 집중되어 있으며, 이러한 구조는 국가적 리스크를 높이고 있다. 감염병, 재난, 기상 악화, 관제 장애 등 단일 허브 공항에 발생하는 문제가 국가 전체의 항공 기능 상실로 직결되는 취약성을 갖는다.</p>
+    <p>수도권 남부와 서해안 지역은 반도체 메가클러스터, 자동차·전자·화학 산업 단지, 평택항·당진항 물류 축 등 국가 전략산업이 밀집해 있으나, 항공 물류와 글로벌 이동에 필요한 공항 접근성은 매우 낮다. 경기국제공항은 이러한 산업 구조 변화에 대응할 수 있는 최적의 전략 인프라이다.</p>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="wp-section">
+    <h2>2. 사업 추진의 당위성</h2>
+
+    <h3>2.1 단일 공항 집중 구조와 다중 관문 체계 비교</h3>
+    <table class="wp-table">
+      <thead>
+        <tr><th>구분</th><th>단일 공항 체계 (현 구조)</th><th>다중 관문 체계 (경기국제공항 포함)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>재난 대응성</td><td class="bad-cell">전국적 항공 운항 마비 가능성</td><td class="highlight-cell">기능 분산·회복력 향상</td></tr>
+        <tr><td>물류 안정성</td><td class="bad-cell">혼잡·적체·지연 발생</td><td class="highlight-cell">공급망 안정성 제고</td></tr>
+        <tr><td>기상·관제 리스크</td><td class="bad-cell">동시 전국 항공 타격</td><td class="highlight-cell">대체공항 확보·운항 유연성</td></tr>
+        <tr><td>국가 운영 리스크</td><td class="bad-cell">단일 실패 지점 (SPOF)</td><td class="highlight-cell">다중 허브로 회복탄력성 강화</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2.2 경기남부 주요 산업지에서 국제공항까지 이동거리 비교</h3>
+    <table class="wp-table">
+      <thead>
+        <tr><th>지역</th><th>인천공항 거리 (km)</th><th>화옹지구 거리 (km)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>수원 (삼성전자)</td><td>약 90 km</td><td class="highlight-cell">약 45 km</td></tr>
+        <tr><td>용인 (반도체 클러스터)</td><td>약 100 km</td><td class="highlight-cell">약 55 km</td></tr>
+        <tr><td>화성 (반도체·자동차)</td><td>약 95 km</td><td class="highlight-cell">약 25 km</td></tr>
+        <tr><td>평택 (항만·산업단지)</td><td>약 110 km</td><td class="highlight-cell">약 30 km</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="wp-section">
+    <h2>3. 배경 및 현황</h2>
+
+    <h3>3.1 경기국제공항 후보지 비교 평가</h3>
+    <table class="wp-table">
+      <thead>
+        <tr><th>평가 항목</th><th>화옹지구</th><th>서탄면</th><th>모가면</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>부지 확보 용이성</td><td class="highlight-cell">매우 우수</td><td>보통</td><td class="bad-cell">낮음</td></tr>
+        <tr><td>산업·물류 연계성</td><td class="highlight-cell">우수</td><td>보통</td><td>보통</td></tr>
+        <tr><td>교통 접근성</td><td class="highlight-cell">우수</td><td>보통</td><td>보통</td></tr>
+        <tr><td>환경 영향 관리 가능성</td><td>보통</td><td>보통</td><td class="highlight-cell">우수</td></tr>
+        <tr><td>확장성</td><td class="highlight-cell">매우 우수</td><td class="bad-cell">제한적</td><td class="bad-cell">제한적</td></tr>
+        <tr><td>민원·보상 부담</td><td class="highlight-cell">매우 낮음</td><td>중간</td><td class="bad-cell">높음</td></tr>
+        <tr><td>종합 경쟁력</td><td class="highlight-cell">🏆 1위</td><td>2위</td><td>3위</td></tr>
+      </tbody>
+    </table>
+
+    <div class="region-img-box">
+      <img src="../assets/img/hwaong_region.png" alt="화옹지구 위치도" />
+      <figcaption>화성 화옹지구 위치 및 광역 교통·산업 연계망</figcaption>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <div class="wp-section">
+    <h2>4. 화옹지구 국제공항 도입 경제적 효과</h2>
+    <table class="wp-table">
+      <thead>
+        <tr><th>항목</th><th>예상 규모</th><th>비고</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>직접 고용 (공항 운영)</td><td class="highlight-cell">8,000~12,000명</td><td>항공운송·관제·시설관리</td></tr>
+        <tr><td>간접 고용 (연계 산업)</td><td class="highlight-cell">20,000~30,000명</td><td>MRO·화물·서비스업</td></tr>
+        <tr><td>유발 고용 (지역경제)</td><td class="highlight-cell">15,000~25,000명</td><td>소비·투자 증가 효과</td></tr>
+        <tr><td>지역 GDP 증가</td><td class="highlight-cell">연 1.2~2.0조 원</td><td>개항 이후 5년 기준</td></tr>
+        <tr><td>물동량 증가 효과</td><td class="highlight-cell">연 8~12% 상승</td><td>평택·당진항 연계 시</td></tr>
+        <tr><td>관광객 증가</td><td class="highlight-cell">연 150만~300만 명</td><td>서해안 관광벨트 연계</td></tr>
+      </tbody>
+    </table>
+
+    <h3>국제공항 개항 전후 자산가치 변화 사례</h3>
+    <table class="wp-table">
+      <thead>
+        <tr><th>지역</th><th>개항 연도</th><th>가치 상승률</th><th>특징</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>영종도 (인천)</td><td>2001</td><td class="highlight-cell">45~90%</td><td>국제도시·물류·관광 복합도시 성장</td></tr>
+        <tr><td>김해 강서구</td><td>2000년대</td><td class="highlight-cell">35~70%</td><td>산업단지·주거지 개발 활성화</td></tr>
+        <tr><td>후쿠오카</td><td>1990년대</td><td class="highlight-cell">25~55%</td><td>도심형 국제공항 시너지</td></tr>
+        <tr><td>하네다 (확장)</td><td>2010</td><td class="highlight-cell">30~50%</td><td>관광·비즈니스 수요 급증</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Noise section -->
+  <div class="wp-section">
+    <h2>5. 소음 영향 및 해결 전략</h2>
+
+    <h3>군용기 소음과 민항기 소음의 구조적 차이</h3>
+    <table class="wp-table">
+      <thead>
+        <tr><th>구분</th><th>군용기 (전투기)</th><th>민항기 (여객·화물)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>엔진 특성</td><td class="bad-cell">초음속 추력·고출력 터보제트</td><td class="highlight-cell">저소음 터보팬·소음저감 설계</td></tr>
+        <tr><td>비행 패턴</td><td class="bad-cell">급상승·급하강·저고도 기동</td><td class="highlight-cell">일정한 상승·하강, 안정적 패턴</td></tr>
+        <tr><td>소음 수준</td><td class="bad-cell">120~150 dB (매향리 사례)</td><td class="highlight-cell">70~90 dB (국제공항 표준)</td></tr>
+        <tr><td>운영 빈도</td><td class="bad-cell">수시출격·훈련 반복</td><td class="highlight-cell">정해진 스케줄 기반 운항</td></tr>
+        <tr><td>민가 영향</td><td class="bad-cell">광범위, 고주파·충격음</td><td class="highlight-cell">활주로 방향 설계로 최소화</td></tr>
+      </tbody>
+    </table>
+
+    <div class="noise-img-box">
+      <figure>
+        <img src="../assets/img/hwaong_noise_deletion.png" alt="화옹지구 소음 영향 차단 구조" />
+        <figcaption>화옹지구 국제공항의 활주로 배치 및 소음영향 차단 구조(예시). 활주로를 서해 방향으로 배치할 경우, 항공기 이륙 시 소음이 민가가 위치한 동측이 아닌 바다 방향으로 분산되어 주민 생활권으로의 소음 유입이 구조적으로 차단된다.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Conclusion -->
+  <div class="conclusion-box">
+    <h2>결론 및 정책 제언</h2>
+    <p>경기남부 국제공항의 화옹지구 건설은 단순한 지역 개발이 아니라, 대한민국 미래 항공·물류·산업 경쟁력을 좌우하는 국가 전략사업이다.</p>
+    <p>✅ 인천국제공항 단일 구조 위험 완화 — <strong>다핵형 관문체계 구축 필수</strong></p>
+    <p>✅ 반도체 메가클러스터 항공물류 최적 거점 — <strong>화성·용인·평택 산업축 직결</strong></p>
+    <p>✅ 국유 간척지 기반 압도적 부지 경쟁력 — <strong>저비용·고확장성</strong></p>
+    <p>✅ 환경 보전과 개발의 공존 — <strong>첨단 친환경 공항 모델 가능</strong></p>
+    <p>✅ 수도권 남부 1,000만 항공 접근성 개선 — <strong>공공성·균형발전 실현</strong></p>
+    <p style="margin-top:20px;">이에 본 백서는 중앙정부와 경기도가 조속히 예비타당성조사와 기본계획 수립을 추진하여, <strong>경기국제공항 건설을 국가 전략으로 확정</strong>할 것을 요청한다.</p>
+  </div>
+
+  <div style="text-align:center; margin-top:60px; padding-top:32px; border-top:1px solid var(--gray-light);">
+    <img src="../assets/img/hwaong_west_stamp.png" alt="인장" style="width:80px; margin:0 auto 16px;" />
+    <p style="font-family:'Noto Serif KR',serif; font-weight:700; color:var(--navy); font-size:1.1rem;">화성화옹지구 서부발전협의회</p>
+    <p style="font-size:14px; color:var(--text-light);">Hwaseong Hwaong Western Development Council (HHWSDC)</p>
+    <a href="mailto:hhwsdc@gmail.com" style="color:var(--gold); font-weight:600;">hhwsdc@gmail.com</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2026 화성화옹지구 서부발전협의회 (HHWSDC)</p>
+      <p><a href="mailto:hhwsdc@gmail.com" style="color:var(--gold)">hhwsdc@gmail.com</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
